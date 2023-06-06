@@ -69,13 +69,13 @@ public class Main {
 //        System.out.println(sum); // it shows 12 and not 12.0
 
 
-        // printf usage
-//        float a = 10.123f;
-//        float b = 12.111f;
-//        float c= a+b;
-//        System.out.printf("The sum of the two numbers is : %f",c);  // returns answer with all decimal points
-//        System.out.printf("\nThe sum of the two numbers is : %.2f",c); // returns answer with only 2 decimal points (%.2f)
-//        System.out.printf("\nThe sum of the two numbers is : %8.3f",c); // returns answer in total 8 spaces with only 3 decimal points
+        // printf usag
+        float a = 10.123f;
+        float b = 12.111f;
+        float c= a+b;
+        System.out.printf("The sum of the two numbers is : %f",c);  // returns answer with all decimal points
+        System.out.printf("\nThe sum of the two numbers is : %.2f",c); // returns answer with only 2 decimal points (%.2f)
+        System.out.printf("\nThe sum of the two numbers is : %8.3f",c); // returns answer in total 8 spaces with only 3 decimal points
 
     }
 }
