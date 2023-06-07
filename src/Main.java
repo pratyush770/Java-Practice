@@ -1,7 +1,7 @@
 import java.util.Scanner;  // for taking input from the user
 public class Main {
     public static void main(String[] args) {
-        System.out.println("JAVA Practice");
+        //System.out.println("JAVA Practice");
 
 
         // Literals in JAVA
@@ -79,7 +79,7 @@ public class Main {
 
 
         // String methods in JAVA
-        String a =" Pratyush ";
+        //String a =" Pratyush ";
 //        int val=a.length();  // returns the length of the string
 //        System.out.println(val);
 //        String val1=a.toLowerCase();  // converts the string into lowercase alphabets
