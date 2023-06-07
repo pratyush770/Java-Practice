@@ -116,5 +116,20 @@ public class Main {
 //        System.out.println(val16);
 
 
+        // Switch statement in JAVA
+//        int age;
+//        System.out.print("Enter your age : ");
+//        Scanner sc=new Scanner(System.in);
+//        age=sc.nextInt();
+//        switch(age){
+//            case 18 :
+//                System.out.println("You're an adult now!");
+//                break;
+//            case 23 :
+//                System.out.println("You're an employee now!");
+//                break;
+//            default :
+//                System.out.println("Enjoy your life!");
+//        }
     }
 }
