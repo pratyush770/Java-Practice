@@ -63,7 +63,7 @@ public class Main {
         // same logic applies for a-- and --b
 
 
-        // Type casting in java
+        // Type casting in JAVA
 //        float a = 10.0f + 2;  // float + int = float
 //        int sum= (int) (a); // converts the float into integer
 //        System.out.println(sum); // it shows 12 and not 12.0
@@ -76,6 +76,45 @@ public class Main {
 //        System.out.printf("The sum of the two numbers is : %f",c);  // returns answer with all decimal points
 //        System.out.printf("\nThe sum of the two numbers is : %.2f",c); // returns answer with only 2 decimal points (%.2f)
 //        System.out.printf("\nThe sum of the two numbers is : %8.3f",c); // returns answer in total 8 spaces with only 3 decimal points
+
+
+        // String methods in JAVA
+        String a =" Pratyush ";
+//        int val=a.length();  // returns the length of the string
+//        System.out.println(val);
+//        String val1=a.toLowerCase();  // converts the string into lowercase alphabets
+//        System.out.println(val1);
+//        String val2=a.toUpperCase();  // converts the string into uppercase alphabets
+//        System.out.println(val2);
+//        String val3=a.trim();   // removes all spaces from the starting and ending
+//        System.out.println(val3);
+//        String val4=a.substring(3);  // returns a substring from the specified starting point
+//        System.out.println(val4);
+//        String val5=a.substring(2,8); // returns a substring from the specified starting point and end point but end point gets excluded
+//        System.out.println((val5));
+//        String val6=a.replace('r','a');  // replaces the character in the string
+//        System.out.println(val6);
+//        String val7=a.replace("rat","ttt");  // replaces multiple characters in the string
+//        System.out.println(val7);
+//        boolean val8=a.startsWith(" Pr");  // returns true if the string starts with the specifies character
+//        System.out.println(val8);
+//        boolean val9=a.endsWith("sh ");  // returns true if the string ends with the specifies character
+//        System.out.println(val9);
+//        char val10=a.charAt(2);  // returns character at a given index position
+//        System.out.println(val10);
+//        int val11=a.indexOf("at");  // returns the index of the string but only the first occurence
+//        System.out.println(val11);
+//        int val12=a.indexOf("y",2);  // returns the index of the string starting from the mentioned index and returns -1 if not matched
+//        System.out.println((val12));
+//        int val13=a.lastIndexOf("t");  // returns the index of the string from ending
+//        System.out.println(val13);
+//        int val14=a.lastIndexOf("t",5); // returns the index of the string from ending from the mentioned index and retunrs -1 if not matched
+//        System.out.println(val14);
+//        boolean val15=a.equals(" Pratyush ");  // returns true if the string is equal to the mentioned string
+//        System.out.println(val15);
+//        boolean val16=a.equalsIgnoreCase(" pratyusH ");  // returns true if the string is equal to the mentioned string ignoring the case of the characters
+//        System.out.println(val16);
+
 
     }
 }
