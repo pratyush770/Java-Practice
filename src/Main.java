@@ -131,5 +131,59 @@ public class Main {
 //            default :
 //                System.out.println("Enjoy your life!");
 //        }
+
+        // Practice Questions
+        // 1)Enter number for getting specific day
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the number for getting day (1-7) : ");
+//        int day=sc.nextInt();
+//        switch(day){
+//            case 1:
+//                System.out.println("Monday");
+//                break;
+//            case 2:
+//                System.out.println("Tuesday");
+//                break;
+//            case 3:
+//                System.out.println("Wednesday");
+//                break;
+//            case 4:
+//                System.out.println("Thursday");
+//                break;
+//            case 5:
+//                System.out.println("Friday");
+//                break;
+//            case 6:
+//                System.out.println("Saturday");
+//                break;
+//            case 7:
+//                System.out.println("Sunday");
+//                break;
+//        }
+
+        // 2)Find leap year or not by taking input from the user
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the year to check whether it is a leap year or not : ");
+//        int yr=sc.nextInt();
+//        if((yr%4==0 && yr%100!=0)||yr%400==0){
+//            System.out.println("It is a leap year");
+//        }
+//        else{
+//            System.out.println("It is not a leap year");
+//        }
+
+        // 3)Find whether the site is an indian,commercial or organizational website
+//        System.out.print("Enter the name of the website : ");
+//        Scanner sc= new Scanner(System.in);
+//        String site=sc.next();
+//        if(site.endsWith(".in")){
+//            System.out.println("It is an indian website");
+//        }
+//        else if(site.endsWith(".org")){
+//            System.out.println("It is an organizational website");
+//        }
+//        else if(site.endsWith(".com")){
+//            System.out.println("It is a commercial website");
+//        }
     }
 }
