@@ -185,5 +185,18 @@ public class Main {
 //        else if(site.endsWith(".com")){
 //            System.out.println("It is a commercial website");
 //        }
+
+
+        // Factorial of a number
+//        System.out.print("Enter a number : ");
+//        Scanner sc=new Scanner(System.in);
+//        int n=sc.nextInt();
+//        int i;
+//        int f=1;
+//        for(i=1;i<=n;i++){
+//            f=f*i;
+//        }
+//        System.out.printf("The factorial of the given number is : %d",f);
+
     }
 }
