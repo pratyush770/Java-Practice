@@ -198,5 +198,178 @@ public class Main {
 //        }
 //        System.out.printf("The factorial of the given number is : %d",f);
 
+
+        // Printing array methods
+//        int [] marks={1,2,3,4,5};
+////        for(int i=0;i<marks.length;i++){    // displays array in straight order
+////            System.out.println(marks[i]);
+////        }
+////        for(int i=marks.length-1;i>=0;i--){     // displays the contents of array in reverse order
+////            System.out.println(marks[i]);
+////        }
+//        for(int element:marks){
+//            System.out.println(element);   // for each loop method
+//        }
+
+
+        // Addition of 2 matrices using 2D array
+//        int mat1 [][]={{1,2,3},{4,5,6}};
+//        int mat2 [][]={{7,8,9},{10,11,12}};
+//        int result [][]={{0,0,0},{0,0,0}};
+//        System.out.println("The contents of the first matrix are");
+//        for(int i=0;i<mat1.length;i++) {    // row number of times
+//            for (int j = 0; j < mat1[i].length; j++) {  // column number of times
+//                System.out.print(mat1[i][j] + " ");
+//            }
+//            System.out.println("");
+//        }
+//        System.out.println("");
+//        System.out.println("The contents of the second matrix are");
+//        for(int i=0;i<mat1.length;i++) {
+//            for (int j = 0; j < mat1[i].length; j++) {
+//                System.out.print(mat2[i][j] + " ");
+//            }
+//            System.out.println("");
+//        }
+//        System.out.println("");
+//        System.out.println("The addition of 2 matrices are as follows");
+//        for(int i=0;i<mat1.length;i++){
+//            for(int j=0;j<mat1[i].length;j++){
+//                result[i][j]=mat1[i][j]+mat2[i][j];
+//                System.out.print(result[i][j]+ " ");
+//            }
+//            System.out.println("");
+//        }
+
+
+        // Display array in reverse order ( IMPORTANT FROM DATA STRUCTURE POV )
+//        int arr [] ={1,9,3,4,5,6};
+//        int l=arr.length;
+//        int n=Math.floorDiv(l,2);  // for calculating greatest integer of the array
+//        int temp;
+//        for(int i=0;i<n;i++){
+//            // swap a[i] and a[l-1-i]
+//            temp=arr[i];   // value of arr[i] gets stored in temp
+//            arr[i]=arr[l-1-i];  // value of arr[l-1-i] gets stored in arr[i]
+//            arr[l-1-i]=temp;   // value of temp gets stored in arr[l-1-i] hence swaps the 2 numbers
+//        }
+//        for(int element:arr){
+//            System.out.print(element + " ");
+//        }
+
+
+        // Methods in JAVA
+//        int a;
+//        int b;
+//        int c;
+//        //Main obj=new Main();   // using object creation
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the first number : ");
+//        a=sc.nextInt();
+//        System.out.print("Enter the second number : ");
+//        b=sc.nextInt();
+//        //c=obj.logic(a,b); // using object creation
+//        c=logic(a,b);  // without using object creation
+//        System.out.print("The addition of the two numbers is : " + c);
+// }
+//        static int logic(int x,int y){   // without creating object
+//        int z;
+//        z=x+y;
+//        return z;
+//    }
+
+
+//        // Variable Arguments in JAVA
+//        System.out.println("The sum of numbers is : " + sum(1,2,3,4));
+//    }
+//
+//    static int sum(int ...arr){
+//        int result=0;
+//        for(int a:arr){
+//            result += a;
+//        }
+//        return result;
+//    }
+
+
+        // Practice Questions
+        // 1)Printing star pattern using function
+//        int a;
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the number of lines you want to print : ");
+//        a=sc.nextInt();
+//        pattern1(a);
+//
+//    }
+
+//    static void pattern1(int n) {
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < i + 1; j++) {
+//                System.out.print("*" + " ");
+//            }
+//            System.out.print("\n");
+//        }
+
+        // using recursion
+//        if (n > 0)
+//            pattern1(n - 1);
+//        for (int i = 0; i < n; i++) {
+//            System.out.print("*" + " ");
+//        }
+//        System.out.print("\n");
+//    }
+
+        // 2)Sum of numbers using recursion
+//        int a;
+//        Scanner sc= new Scanner(System.in);
+//        System.out.print("Enter the number : ");
+//        a=sc.nextInt();
+//        System.out.print("The sum of the numbers using recursion is : " + sumRec(a));
+//    }
+//    static int sumRec(int n){
+//        if(n==1){
+//            return 1;   // Base condition
+//        }
+//        return n + sumRec(n-1);
+//    }
+
+        // 3)Printing star pattern using function
+//        int a;
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the number of lines you want to print : ");
+//        a=sc.nextInt();
+//        pattern2(a);
+//     }
+//     static void pattern2(int n) {
+//        for(int i=n;i>=0;i--){
+//            for(int j=0;j<i;j++){
+//                System.out.print("*" + " ");
+//            }
+//            System.out.print("\n");
+//        }
+//    }
+
+        // using recursion
+//         if(n>0){
+//             for(int i=n;i>0;i--){
+//                 System.out.print("*" + " ");
+//             }
+//             System.out.print("\n");
+//             pattern2(n-1);
+//         }
+//     }
+
+        // 4)Average of numbers using variable arguments
+//        System.out.print("The average of numbers is : " + avg(8,16,6));
+//    }
+//    static int avg(int ...arr){
+//        int sum=0;
+//        int average;
+//        for(int a:arr){
+//            sum+=a;
+//        }
+//        average=sum/2;
+//        return average;
+//    }
     }
 }
