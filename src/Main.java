@@ -371,5 +371,6 @@ public class Main {
 //        average=sum/2;
 //        return average;
 //    }
+
     }
 }
