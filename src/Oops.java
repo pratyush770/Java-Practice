@@ -136,6 +136,25 @@ import java.util.Scanner;
 //    }
 //}
 
+
+// Dynamic method dispatch/Runtime polymorphism
+//class Phone{
+//    public void met1(){
+//        System.out.println("Hi");
+//    }
+//    public void met2(){
+//        System.out.println("This is my phone");
+//    }
+//}
+//class SmartPhone extends Phone{
+//    public void met3(){  // to execute this method create reference for derived class i.e. SmartPhone s = new SmartPhone();
+//        System.out.println("I am derived class");
+//    }
+//    public void met2(){
+//        System.out.println("This is my smartphone");
+//    }
+//}
+
 public class Oops {
     public static void main(String[] args) {
         // Problem 1
@@ -207,5 +226,11 @@ public class Oops {
 //        obj.meth1(); // will execute method from base class
 //        b obj1= new b();
 //        obj1.meth1();  // will override base class method and execute derived class method
+
+        // Dynamic method dispatch/Runtime polymorphism
+//        Phone obj=new SmartPhone();  // creating reference for derived class using base class
+//        obj.met1();
+//        obj.met2();  // it will show method of derived class
+//        obj.met3(); // not allowed
     }
 }
