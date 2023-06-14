@@ -155,6 +155,25 @@ import java.util.Scanner;
 //    }
 //}
 
+
+// Abstract class
+//abstract class Parent{  // abstract class
+//    abstract public void greet();   // abstract method
+//}
+//class Child extends Parent{
+////    @Override
+//    public void greet(){  // will work only for overriden method
+//        System.out.println("I am overriden method from base class");
+//    }
+//    public void show(){  // will not work if the above method greet() is not written
+//        System.out.println("Hello World");
+//    }
+//}
+//class Child1 extends Parent{  // it must be either declared abstract or implement the abstract method greet();
+//    public void show(){  // will not execute
+//        System.out.println("Hello");
+//    }
+//}
 public class Oops {
     public static void main(String[] args) {
         // Problem 1
@@ -232,5 +251,10 @@ public class Oops {
 //        obj.met1();
 //        obj.met2();  // it will show method of derived class
 //        obj.met3(); // not allowed
+
+        // Abstract class
+//        Child c = new Child();
+//        Child1 c1 = new Child1();   // will not execute
+//        c.greet();
     }
 }
