@@ -1,3 +1,4 @@
+package Exercise;
 // Rock,Paper and Scissors game using JAVA
 
 import java.util.Random;

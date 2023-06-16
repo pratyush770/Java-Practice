@@ -1,3 +1,4 @@
+package Exercise;
 // Guess the number
 
 //Create a class Game, which allows a user to play "Guess the Number" game once. Game should have the following methods:
@@ -42,10 +43,9 @@ class Game{
             System.out.println("Guessed number is too high, please try again!!");
         }
         return false;
-
     }
 }
-    public class nog {
+public class nog {
     public static void main(String[] args) {
         Game g = new Game();
         boolean b =false;
@@ -55,3 +55,4 @@ class Game{
         }
     }
 }
+

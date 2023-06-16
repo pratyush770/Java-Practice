@@ -1,3 +1,4 @@
+package JAVA;
 import java.util.Scanner;
 
 // 1)Display employee details
