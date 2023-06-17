@@ -114,6 +114,13 @@ import java.util.Random;
 //        int i = 0;
 //        while (i < 20) {
 //            System.out.println("This is method 1");
+//            try{
+//                Thread.sleep(500);
+//            }
+//            catch (Exception e){
+//                e.printStackTrace();
+//            }
+//            i++;
 //        }
 //    }
 //}
@@ -123,6 +130,13 @@ import java.util.Random;
 //        int i =0;
 //        while(i < 20) {
 //            System.out.println("This is method 2");
+//            try{
+//                Thread.sleep(500);   // will take a 500 millisecond gap after each iteration
+//            }
+//            catch (Exception e){
+//                e.printStackTrace();
+//            }
+//            i++;
 //        }
 //    }
 //}
@@ -134,6 +148,7 @@ import java.util.Random;
 //        int i = 0;
 //        while(i<20){
 //            System.out.println("This is method 1");
+//            i++;
 //        }
 //    }
 //}
@@ -142,6 +157,7 @@ import java.util.Random;
 //        int i =0;
 //        while(i<20){
 //            System.out.println("This is method 2");
+//            i++;
 //        }
 //    }
 //}
@@ -174,6 +190,7 @@ import java.util.Random;
 //        int i = 0;
 //        while(i<10) {
 //            System.out.println("This is method 1 which is MIN_PRIORITY");
+//            i++;
 //        }
 //    }
 //}
@@ -182,6 +199,7 @@ import java.util.Random;
 //        int i = 0;
 //        while(i<10) {
 //            System.out.println("This is method 2 which is NORM_PRIORITY");
+//            i++;
 //        }
 //    }
 //}
@@ -190,6 +208,7 @@ import java.util.Random;
 //        int i = 0;
 //        while(i<10) {
 //            System.out.println("This is method 3 which is MAX_PRIORITY");
+//            i++;
 //        }
 //    }
 //}
@@ -238,7 +257,16 @@ public class Oops2 {
 //        MyThread t1 = new MyThread();
 //        MyThread1 t2 = new MyThread1();
 //        t1.start();  // start() method is used to run the thread
+//        try{
+//            t1.join();  // will execute t1 first and then t2
+//        }
+//        catch (Exception e){
+//            System.out.println(e);
+//        }
 //        t2.start();
+//        System.out.println(t1.getState());   // returns the state of the thread
+//        System.out.println(t2.getState());
+//        System.out.println(Thread.currentThread().getState());  // returns the state of the current thread
 
         // Creating a thread by implementing Runnable interface ( Method 2 )
 //        MyThread m1 = new MyThread();
