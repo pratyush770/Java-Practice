@@ -105,6 +105,94 @@ import java.util.Random;
 //    }
 //}
 
+
+// Creating a thread by extending thread class
+// Method 1 ( Default method with no parameters )
+//class MyThread extends Thread{
+//    @Override
+//    public void run() {  // use run method for executing thread
+//        int i = 0;
+//        while (i < 20) {
+//            System.out.println("This is method 1");
+//        }
+//    }
+//}
+//class MyThread1 extends Thread{
+//    @Override
+//    public void run(){
+//        int i =0;
+//        while(i < 20) {
+//            System.out.println("This is method 2");
+//        }
+//    }
+//}
+
+// Creating a thread by implementing Runnable interface
+// Method 2 ( Taking Runnable r as a parameter)
+//class MyThread implements Runnable{
+//    public void run(){ // will not work without this run() method
+//        int i = 0;
+//        while(i<20){
+//            System.out.println("This is method 1");
+//        }
+//    }
+//}
+//class MyThread1 implements Runnable{
+//    public void run(){
+//        int i =0;
+//        while(i<20){
+//            System.out.println("This is method 2");
+//        }
+//    }
+//}
+
+// Constructors from Thread class in JAVA ( 2 methods already done)
+// Method 3 ( Taking String name as a parameter)
+//class MyThread extends Thread {
+//    MyThread(String name){
+//        super(name); // the name is taken from Thread class so super(name) is used
+//    }
+//    public void run(){
+//        System.out.println("I am a thread");
+//    }
+//}
+
+// Method 4 ( Taking Runnable r as well as String name as a parameter)
+//class MyThread extends Thread implements Runnable{
+//    MyThread(String name){
+//        super(name);
+//    }
+//    public void run(){
+//        System.out.println("I am a method ");
+//    }
+//}
+
+
+// JAVA Thread priorities
+//class MyThread extends Thread{
+//    public void run(){
+//        int i = 0;
+//        while(i<10) {
+//            System.out.println("This is method 1 which is MIN_PRIORITY");
+//        }
+//    }
+//}
+//class MyThread1 extends Thread{
+//    public void run(){
+//        int i = 0;
+//        while(i<10) {
+//            System.out.println("This is method 2 which is NORM_PRIORITY");
+//        }
+//    }
+//}
+//class MyThread2 extends Thread{
+//    public void run(){
+//        int i = 0;
+//        while(i<10) {
+//            System.out.println("This is method 3 which is MAX_PRIORITY");
+//        }
+//    }
+//}
 public class Oops2 {
     public static void main(String[] args) {
         // Interface in JAVA
@@ -130,7 +218,7 @@ public class Oops2 {
 //        c.takePic();
 //        c.TrackLocation();  // will not work
 
-//         Practice question
+        // Practice question
 //         1) Class Monkey with interface BasicAnimal
 //        Human h = new Human();
 //        h.eat();
@@ -138,12 +226,50 @@ public class Oops2 {
 //        h.jump();
 //        h.bite();
 
-//        Demonstrating polymorphism in class and interface
+        // Demonstrating polymorphism in class and interface
 //        Monkey m =new Human();  // works only for methods of class Monkey
 //        m.jump();
 //        m.eat();  // will not work
 //        BasicAnimal b = new Human();  // works only for methods of interface BasicAnimal
 //        b.eat();
 //        b.jump();  // will not work
+
+        // Creating a thread by extending Thread class ( Method 1 )
+//        MyThread t1 = new MyThread();
+//        MyThread1 t2 = new MyThread1();
+//        t1.start();  // start() method is used to run the thread
+//        t2.start();
+
+        // Creating a thread by implementing Runnable interface ( Method 2 )
+//        MyThread m1 = new MyThread();
+//        Thread t1 = new Thread(m1);  // create thread object for this type of thread creation
+//        MyThread1 m2 = new MyThread1();
+//        Thread t2 = new Thread(m2);
+//        t1.start();
+//        t2.start();
+
+        // Method 3 ( Taking string as a parameter )
+//        MyThread t1 = new MyThread("Pratyush");
+//        t1.start();
+//        System.out.println("The id of the thread is " + t1.getId()); // will give the id of the thread
+//        System.out.println("The name of the thread is " + t1.getName());  // will give the name of the thread
+
+        // Method 4 ( Taking String name as well as Runnable r as parameters )
+//        MyThread m1 = new MyThread("Pratyush");
+//        Thread t1 = new Thread(m1);
+//        t1.start();
+//        System.out.println("The id of the string is : " + t1.getId());
+
+        // JAVA Thread priorities
+//        MyThread m1 = new MyThread();
+//        MyThread1 m2 = new MyThread1();
+//        MyThread2 m3 = new MyThread2();
+//        // setPriority() is used to set the priority
+//        m1.setPriority(Thread.MIN_PRIORITY); // MIN_PRIORITY = 1;
+//        m2.setPriority(Thread.NORM_PRIORITY); // NORM_PRIORITY = 5;
+//        m3.setPriority(Thread.MAX_PRIORITY); // MAX_PRIORITY = 10;
+//        m1.start();
+//        m2.start();
+//        m3.start();
     }
 }

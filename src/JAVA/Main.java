@@ -1,3 +1,5 @@
+package JAVA;
+
 import java.util.Scanner;  // for taking input from the user
 public class Main {
     public static void main(String[] args) {
@@ -262,7 +264,7 @@ public class Main {
 //        int a;
 //        int b;
 //        int c;
-//        //Main obj=new Main();   // using object creation
+//        //JAVA.Main obj=new JAVA.Main();   // using object creation
 //        Scanner sc=new Scanner(System.in);
 //        System.out.print("Enter the first number : ");
 //        a=sc.nextInt();
