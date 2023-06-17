@@ -1,4 +1,3 @@
-package JAVA;
 import java.util.Scanner;  // for taking input from the user
 public class Main {
     public static void main(String[] args) {
