@@ -1,4 +1,5 @@
 package JAVA;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -212,7 +213,27 @@ import java.util.Random;
 //        }
 //    }
 //}
+
+
+// Exception class in JAVA
+class NegativeNumberException extends Exception {
+    @Override
+    public String getMessage() {
+        return "The entered number is negative";
+    }
+}
 public class Oops2 {
+    // throws keyword usage
+    public static int Square(int a) throws NegativeNumberException{
+        int area;
+        if(a<0){
+            throw new NegativeNumberException();
+        }
+        else {
+            area = a * a;
+            return area;
+        }
+    }
     public static void main(String[] args) {
         // Interface in JAVA
 //        School s = new School();
@@ -299,5 +320,49 @@ public class Oops2 {
 //        m1.start();
 //        m2.start();
 //        m3.start();
+
+        // Try Catch block in JAVA
+//        int a ;
+//        try{
+//            System.out.print("Enter a number : ");
+//            Scanner sc = new Scanner(System.in);
+//            a=sc.nextInt();
+//            System.out.println("The entered number is : " + a); // will work if there is no error
+//        }
+//        catch(Exception e){
+//            System.out.println("An exception has occured which is : " + e);  // will display if there is an error
+//        }
+//        System.out.println("End of the program");  // will display if try catch block is used otherwise it will display only if there is no error
+
+        // Exception class in JAVA using throw keyword
+//        int a;
+//        System.out.print("Enter a number : ");
+//        Scanner sc = new Scanner(System.in);
+//        a=sc.nextInt();
+//        if(a<0){
+//            try{
+//                throw new MyException();
+//            }
+//            catch(Exception e){
+//                System.out.println(e.getMessage());
+//                System.out.println(e);  // executes toString method or can also be declared explicitly
+//            }
+//        }
+//        else{
+//            System.out.println("The entered number is : " + a);
+//        }
+
+        // try catch with usage of throws keyword
+//        try{
+//            int r;
+//            System.out.print("Enter the side : ");
+//            Scanner sc = new Scanner(System.in);
+//            r=sc.nextInt();
+//            int s = Square(r);
+//            System.out.println("The area of the square is : " + s);
+//        }
+//        catch (Exception e){
+//            System.out.println(e.getMessage());
+//        }
     }
 }
