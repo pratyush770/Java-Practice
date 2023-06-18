@@ -216,24 +216,29 @@ import java.util.Random;
 
 
 // Exception class in JAVA
-class NegativeNumberException extends Exception {
-    @Override
-    public String getMessage() {
-        return "The entered number is negative";
-    }
-}
+//class NegativeNumberException extends Exception {
+//    @Override
+//    public String getMessage() {
+//        return "The entered number is negative";
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Please enter a positive number";
+//    }
+//}
 public class Oops2 {
     // throws keyword usage
-    public static int Square(int a) throws NegativeNumberException{
-        int area;
-        if(a<0){
-            throw new NegativeNumberException();
-        }
-        else {
-            area = a * a;
-            return area;
-        }
-    }
+//    public static int Square(int a) throws NegativeNumberException{
+//        int area;
+//        if(a<0){
+//            throw new NegativeNumberException();
+//        }
+//        else {
+//            area = a * a;
+//            return area;
+//        }
+//    }
     public static void main(String[] args) {
         // Interface in JAVA
 //        School s = new School();
@@ -341,7 +346,7 @@ public class Oops2 {
 //        a=sc.nextInt();
 //        if(a<0){
 //            try{
-//                throw new MyException();
+//                throw new NegativeNumberException();
 //            }
 //            catch(Exception e){
 //                System.out.println(e.getMessage());
