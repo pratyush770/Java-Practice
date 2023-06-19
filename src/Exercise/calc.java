@@ -1,3 +1,4 @@
+// Whole code written by me without referring anything...
 package Exercise;
 import java.util.Scanner;
 
